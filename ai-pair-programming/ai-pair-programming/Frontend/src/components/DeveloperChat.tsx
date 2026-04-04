@@ -5,6 +5,8 @@ import { Input } from "./ui/input"
 import { ScrollArea } from "./ui/scroll-area"
 import { Badge } from "./ui/badge"
 import { Send, User, Phone, PhoneOff, PhoneMissed } from "lucide-react"
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import { useWebRTC } from "../hooks/useWebRTC"
 import { useSocket } from "../hooks/useSocket"
 
@@ -20,6 +22,7 @@ interface TwoPersonChatProps {
   userId: string
   userName: string
   roomId: string
+  onMessageAdded?: (message: Message) => void
 }
 
 interface OtherUser {
@@ -27,7 +30,7 @@ interface OtherUser {
   name: string
 }
 
-export const TwoPersonChat: React.FC<TwoPersonChatProps> = ({ userId, userName, roomId }) => {
+export const TwoPersonChat: React.FC<TwoPersonChatProps> = ({ userId, userName, roomId, onMessageAdded }) => {
   const [messages, setMessages] = useState<Message[]>([])
   const [inputValue, setInputValue] = useState<string>("")
   const [otherUser, setOtherUser] = useState<OtherUser | null>(null)
@@ -71,42 +74,39 @@ export const TwoPersonChat: React.FC<TwoPersonChatProps> = ({ userId, userName, 
       console.log("other user")
       console.log(otherUser)
       setOtherUser(user)
-      setMessages((prev) => [
-        ...prev,
-        {
-          id: Date.now().toString(),
-          senderId: "system",
-          senderName: "System",
-          content: `${user.name} joined the chat`,
-          timestamp: new Date(),
-        },
-      ])
+      const msg: Message = {
+        id: Date.now().toString(),
+        senderId: "system",
+        senderName: "System",
+        content: `${user.name} joined the chat`,
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, msg])
+      onMessageAdded?.(msg)
     }
 
     const handleUserLeft = (user: OtherUser) => {
       setOtherUser(null)
-      setMessages((prev) => [
-        ...prev,
-        {
-          id: Date.now().toString(),
-          senderId: "system",
-          senderName: "System",
-          content: `${user.name} left the chat`,
-          timestamp: new Date(),
-        },
-      ])
+      const msg: Message = {
+        id: Date.now().toString(),
+        senderId: "system",
+        senderName: "System",
+        content: `${user.name} left the chat`,
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, msg])
+      onMessageAdded?.(msg)
     }
 
     const handleMessage = (message: Message) => {
       console.log("Received message:", message)
       if (message.senderId === userId) return // Ignore own messages
-      setMessages((prev) => [
-        ...prev,
-        {
-          ...message,
-          timestamp: new Date(message.timestamp),
-        },
-      ])
+      const msg = {
+        ...message,
+        timestamp: new Date(message.timestamp),
+      };
+      setMessages((prev) => [...prev, msg])
+      onMessageAdded?.(msg)
     }
 
     // Add event listeners
@@ -140,6 +140,7 @@ export const TwoPersonChat: React.FC<TwoPersonChatProps> = ({ userId, userName, 
 
     socket.emit("send-message", message)
     setMessages((prev) => [...prev, message])
+    onMessageAdded?.(message)
     setInputValue("")
   }
 
@@ -179,7 +180,7 @@ export const TwoPersonChat: React.FC<TwoPersonChatProps> = ({ userId, userName, 
   }
 
   return (
-    <div className="h-96 flex flex-col">
+    <div className="flex-1 min-h-0 h-full flex flex-col">
       {/* Header with call controls */}
       <div className="flex justify-between items-center p-3 border-b border-slate-600">
         <div className="flex items-center gap-2">
@@ -238,7 +239,11 @@ export const TwoPersonChat: React.FC<TwoPersonChatProps> = ({ userId, userName, 
                   {message.senderId !== "system" && message.senderId !== userId && (
                     <p className="text-xs text-slate-400 mb-1">{message.senderName}</p>
                   )}
-                  <p className="text-sm leading-relaxed">{message.content}</p>
+                  <div className="prose prose-invert prose-sm max-w-none text-slate-200">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {message.content}
+                    </ReactMarkdown>
+                  </div>
                 </div>
 
                 <p className="text-xs text-slate-500 mt-1">{message.timestamp.toLocaleTimeString()}</p>

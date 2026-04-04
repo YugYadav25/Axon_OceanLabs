@@ -6,6 +6,8 @@ import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Badge } from '@/components/ui/badge';
 import { Send, Bot, User, Lightbulb } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Message {
   id: string;
@@ -18,17 +20,21 @@ interface Message {
 interface AIAssistantChatProps {
   transcript: string;
   codeMentions: string[];
+  repoUrl?: string;
 }
 
 export const AIAssistantChat: React.FC<AIAssistantChatProps> = ({ 
   transcript, 
-  codeMentions 
+  codeMentions,
+  repoUrl
 }) => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
       type: 'assistant',
-      content: 'Hi! I\'m your AI pair programming assistant. I\'ll help explain code concepts and provide context during your session. Feel free to ask me anything!',
+      content: repoUrl
+        ? `Hi! I'm Gitzy, your AI pair programming assistant. I know about the repo **${repoUrl.replace('https://github.com/', '')}** and will use that context to help you. Ask me anything about the codebase!`
+        : `Hi! I'm Gitzy, your AI pair programming assistant. I'll help explain code concepts and provide context during your session. Tip: add a GitHub repo URL on the join screen to make me repo-aware!`,
       timestamp: new Date(),
     }
   ]);
@@ -85,17 +91,17 @@ export const AIAssistantChat: React.FC<AIAssistantChatProps> = ({
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://axon.onrender.com/api/chat', {
+      const response = await fetch(`${import.meta.env.VITE_AI_BACKEND_URL || 'http://localhost:3002'}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: inputValue,
-          codeMentions: codeMentions.slice(-2)
+          codeMentions: codeMentions.slice(-2),
+          repoUrl: repoUrl || null,
+          transcript: transcript ? transcript.slice(-400) : null,
         })
       });
       const aiMessage = await response.json();
-
-      // Convert the timestamp string from backend to Date object for consistency
       setMessages(prev => [...prev, {
         ...aiMessage,
         timestamp: new Date(aiMessage.timestamp)
@@ -122,7 +128,7 @@ export const AIAssistantChat: React.FC<AIAssistantChatProps> = ({
   };
 
   return (
-    <div className="h-96 flex flex-col">
+    <div className="flex-1 min-h-0 h-full flex flex-col">
       <ScrollArea className="flex-1 mb-4" ref={scrollRef}>
         <div className="space-y-4 p-2">
           {messages.map((message) => (
@@ -138,12 +144,14 @@ export const AIAssistantChat: React.FC<AIAssistantChatProps> = ({
               </div>
               
               <div className={`flex-1 ${message.type === 'user' ? 'text-right' : ''}`}>
-                <div className={`inline-block max-w-[85%] rounded-lg p-3 ${
+                <div className={`inline-block max-w-[85%] rounded-lg p-3 prose prose-invert prose-sm max-w-none ${
                   message.type === 'user'
                     ? 'bg-[#21262D] text-blue-100 border border-blue-500/30'
                     : 'bg-[#21262D] text-slate-200 border border-slate-600/50'
                 }`}>
-                  <p className="text-sm leading-relaxed">{message.content}</p>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {message.content}
+                  </ReactMarkdown>
                   
                   {message.context && message.context.length > 0 && (
                     <div className="flex flex-wrap gap-1 mt-2">

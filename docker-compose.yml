@@ -1,0 +1,79 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: axon-mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./axon-backend/axon-backend
+    container_name: axon-backend
+    ports:
+      - '3000:3000'
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
+      - PYTHON_BACKEND_URL=${PYTHON_BACKEND_URL}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    depends_on:
+      - mongodb
+      - python-backend
+    restart: unless-stopped
+
+  python-backend:
+    build:
+      context: ./axon-python-backend/axon-python-backend
+    container_name: axon-python-backend
+    ports:
+      - '5005:5005'
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    depends_on:
+      - mongodb
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./axon-frontend/axon-frontend
+      args:
+        VITE_SUPABASE_URL: ${SUPABASE_URL}
+        VITE_SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY}
+        VITE_BACKEND_URL: ${BACKEND_URL}
+    container_name: axon-frontend
+    ports:
+      - '5173:80'
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  ai-pair-backend:
+    build:
+      context: ./ai-pair-programming/ai-pair-programming/Backend
+    container_name: ai-pair-backend
+    ports:
+      - '3002:3002'
+    environment:
+      - GEMINI_API_KEY=${LLM_API_TOKEN}
+      - LLM_API_TOKEN=${LLM_API_TOKEN}
+    restart: unless-stopped
+
+  ai-pair-frontend:
+    build:
+      context: ./ai-pair-programming/ai-pair-programming/Frontend
+    container_name: ai-pair-frontend
+    ports:
+      - '8080:80'
+    depends_on:
+      - ai-pair-backend
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
