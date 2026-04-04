@@ -38,7 +38,8 @@ export const TwoPersonChat: React.FC<TwoPersonChatProps> = ({ userId, userName, 
   const scrollRef = useRef<HTMLDivElement>(null)
 
   // Socket connection for chat and signaling
-  const socket = useSocket(import.meta.env.VITE_AI_BACKEND_URL || "http://localhost:3002", {
+  const backendUrl = import.meta.env.VITE_AI_BACKEND_URL || `http://${window.location.hostname}:3002`;
+  const socket = useSocket(backendUrl, {
     userId,
     userName,
     roomId,

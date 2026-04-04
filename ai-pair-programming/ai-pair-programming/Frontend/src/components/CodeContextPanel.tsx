@@ -22,8 +22,9 @@ export const CodeContextPanel: React.FC<CodeContextPanelProps> = ({ codeMentions
     setLoading(true);
     setMarkdownFromAI(null);
     try {
+      const backendUrl = import.meta.env.VITE_AI_BACKEND_URL || `http://${window.location.hostname}:3002`;
       const response = await axios.post(
-        `${import.meta.env.VITE_AI_BACKEND_URL || 'http://localhost:3002'}/api/analyze-repo`,
+        `${backendUrl}/api/analyze-repo`,
         { repoUrl: url }
       );
       

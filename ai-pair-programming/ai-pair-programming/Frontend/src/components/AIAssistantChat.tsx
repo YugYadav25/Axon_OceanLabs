@@ -91,7 +91,8 @@ export const AIAssistantChat: React.FC<AIAssistantChatProps> = ({
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_AI_BACKEND_URL || 'http://localhost:3002'}/api/chat`, {
+      const backendUrl = import.meta.env.VITE_AI_BACKEND_URL || `http://${window.location.hostname}:3002`;
+      const response = await fetch(`${backendUrl}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

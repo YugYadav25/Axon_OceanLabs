@@ -97,7 +97,8 @@ export const AudioCallManager: React.FC<AudioCallManagerProps> = ({
 
   // Initialize socket
   useEffect(() => {
-    const s = io(import.meta.env.VITE_AI_BACKEND_URL || 'http://localhost:3002');
+    const backendUrl = import.meta.env.VITE_AI_BACKEND_URL || `http://${window.location.hostname}:3002`;
+    const s = io(backendUrl);
     socketRef.current = s;
 
     s.on('offer', async (peerId: string, offer: RTCSessionDescriptionInit) => {

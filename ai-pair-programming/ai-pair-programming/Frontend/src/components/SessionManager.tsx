@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -19,14 +19,31 @@ export const SessionManager: React.FC<SessionManagerProps> = ({
   const [sessionName, setSessionName] = useState('');
   const [duration, setDuration] = useState(0);
 
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
+  }, []);
+
   const startSession = () => {
     const sessionId = `session-${Date.now()}`;
     const name = sessionName || `Pair Session ${new Date().toLocaleTimeString()}`;
     onSessionChange(sessionId);
     setIsRecording(true);
+    setDuration(0);
     
+    // Clear any existing timer
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+
     // Start timer
-    const timer = setInterval(() => {
+    timerRef.current = setInterval(() => {
       setDuration(prev => prev + 1);
     }, 1000);
     
@@ -34,8 +51,11 @@ export const SessionManager: React.FC<SessionManagerProps> = ({
   };
 
   const stopSession = () => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
     setIsRecording(false);
-    setDuration(0);
     onSessionChange(null);
     console.log('Session stopped');
   };

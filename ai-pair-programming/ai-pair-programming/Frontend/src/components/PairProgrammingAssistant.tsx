@@ -71,7 +71,8 @@ export const PairProgrammingAssistant: React.FC<PairProgrammingAssistantProps> =
     const fullText = [audioText, textChat].filter(Boolean).join('\n\n');
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_AI_BACKEND_URL || 'http://localhost:3002'}/api/session-summary`, {
+      const backendUrl = import.meta.env.VITE_AI_BACKEND_URL || `http://${window.location.hostname}:3002`;
+      const res = await fetch(`${backendUrl}/api/session-summary`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ transcript: fullText, repoUrl }),
