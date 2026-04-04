@@ -172,7 +172,7 @@ export default function DashboardSidebar({ repoId, user }) {
 
   {/* Bottom Section: Action Buttons + Collapse Toggle */}
   <div className="flex flex-col items-center space-y-4">
-      <button onClick={() => window.open("http://localhost:8080", "_blank")}
+      <button onClick={() => window.open(import.meta.env.VITE_AI_PAIR_FRONTEND_URL || "http://localhost:8080", "_blank")}
   className={classNames(
     "transition rounded-xl w-full",
     {

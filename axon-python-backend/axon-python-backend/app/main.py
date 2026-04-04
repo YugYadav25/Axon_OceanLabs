@@ -11,6 +11,12 @@ from app.routes import brand
 
 app = FastAPI()
 
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 # Include embed router
 app.include_router(brand.router)
 app.include_router(hotspot.router)
