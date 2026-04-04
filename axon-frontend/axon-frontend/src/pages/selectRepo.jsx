@@ -97,7 +97,7 @@ const SelectRepo = () => {
         <div>
           <p className="text-xl font-semibold">
             <span className="bg-gradient-to-r from-[#CAF5BB] to-[#2F89FF] bg-clip-text text-transparent">
-            axon
+            Axon
           </span>
           </p>
           <p className="text-xs text-[#C9C9C9]">Your repo with AI clarity</p>

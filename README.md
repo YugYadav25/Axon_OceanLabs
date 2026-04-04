@@ -1,128 +1,289 @@
-# 🧠 Axon — AI-Powered Codebase Intelligence
-> 🔍 View full code at the [Axon Organization](https://github.com/repo-sensei)
+<div align="center">
 
-**Axon** is an AI-powered platform designed to streamline the **understanding**, **maintenance**, and **collaboration** of modern codebases. 
+<br/>
 
+# ⚡ Axon
 
+### _The Intelligence Layer for Your Codebase_
 
-## 🧩 Key Features
+**Axon** turns any GitHub repository into a fully navigable, AI-augmented knowledge system — so developers spend less time deciphering code and more time building great software.
 
-### ✅ Repo Analysis & Navigation
-- Interactive **dependency mapping** and architecture visualization
-- Detection of technical hotspots and test coverage gaps
-- Commit history categorized by type and contributor
+<br/>
 
-### 🧭 Role-Based Onboarding
-- Auto-generated repo walkthroughs for frontend/backend developers
-- Tailored task lists based on role and codebase context
-- One-click onboarding for faster ramp-up
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://mongodb.com)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 
-### 🕒 Recent Changes Panel
-- Auto-categorizes recent commits into **Features**, **Fixes**, **Refactors**, **Tests**, and **Docs**
-- Displays contributor, change description, and impacted files
-- Helps assess potential risks and streamline code reviews
+<br/>
 
-### 💡 Repository Architecture Diagram
-- Graph-based visualization of module structure, dependencies, and data flow
-- Powered by **Cytoscape.js** for real-time interaction
-- Ideal for understanding large or unfamiliar codebases
+[**🚀 Live Demo**](#) · [**📸 Screenshots**](#-screenshots) · [**🛠️ Setup**](#%EF%B8%8F-getting-started) · [**💡 Features**](#-features)
 
-### 🔍 Code Quality Audits
-- Automated detection of TODOs, lint violations, and complexity issues
-- ESLint-powered file-level insights
-- AI-generated tasks with severity and location metadata
+</div>
 
-### 🔥 Technical Debt Hotspots & Refactor Suggestions
-- Identifies and ranks the most debt-prone files
-- Highlights stale code, low-test areas, and unresolved TODOs
-- Generates AI-powered natural-language refactor suggestions using GPT-4o Mini
+---
 
-### 🤖 AI-Powered Development Tools
-- Converts vague goals and code changes into actionable development tasks
-- AI chatbot with repo-specific awareness for on-demand help
-- GPT-4o & Gemini Flash integration for summarization, pairing, and audits
+## 🧠 The Problem
 
-### 📈 Git Activity Dashboard
-- Weekly commit breakdown, code changes by file/module, and language trends
-- Auto-generated **Impact Summary Cards** for portfolios and reviews
-- Visual breakdown of contributions beyond raw commit counts
+Every engineering team faces it. A developer joins a new project — or returns after months away — and faces an impenetrable wall of code. Thousands of files, undocumented decisions, rotting TODOs, and no clear onboarding path.
 
-### 🎧 AI Pairing Mode
-- Real-time **text/audio collaboration** between contributors
-- Contextual lookup of relevant files and commit history
-- AI assistant answers repo-specific questions on demand
+**The average developer wastes 58% of their time just understanding code they didn't write.**
 
-## 📌 Feature Screenshots
+Existing tools like GitHub, GitLens, and Copilot are reactive — they help you _write_ code, but they don't help you _understand_ a codebase at scale.
 
-### 🖥️ Landing Page
-![Landing](./assets/screenshots/landing.png)
+## ✨ The Solution
 
-### 📊 User Activity & Impact Statement
-![Dashboard](./assets/screenshots/dashboard.png)
-![Impact](./assets/screenshots/impact.png)
+**Axon** is a proactive codebase intelligence platform. Connect any public GitHub repository, and Axon instantly:
 
-### 📂 Onboarding Walkthrough
-![Onboarding](./assets/screenshots/onboard-expanded-tasks.png)
+- **Maps** your codebase with AST-level precision
+- **Onboards** new developers in minutes, not days
+- **Detects** security vulnerabilities and technical debt — offline, with zero API calls
+- **Summarizes** every commit your team has ever pushed, categorized automatically
+- **Generates** personal impact statements for every contributor
 
-### ✨ Code Quality Audits
-![Audits](./assets/screenshots/code-quality-collapsed.png)
+---
 
-### 🛠️ Debt Hotspots & Refactor Suggestions
-![Refactors](./assets/screenshots/hotspots-collapsed-suggestion.png)
+## 🔥 Features
 
-### 🕒 Recent Updates Panel
-![Commits](./assets/screenshots/commits-expanded.png)
+### 🧭 Role-Based Developer Onboarding
+> *New hire? Junior dev picking up an unfamiliar service? This is your co-pilot.*
 
-### 💡 Repository Dependencies Diagram
-![Diagram](./assets/screenshots/diagram.png)
+Axon scans the repo structure and generates a **personalized onboarding plan** based on whether you work on the frontend or backend. You get:
+- A curated HTML overview of the modules most relevant to your role
+- A prioritized task list to get you contributing fast
+- ESLint-powered code quality audit built straight into your onboarding checklist
 
-### 💬 AI Pairing Chat
-![Pair Start](./assets/screenshots/pair-mode-start.png)
-![Pair Session](./assets/screenshots/pair.png)
+---
 
+### 🛡️ Offline Security & Secrets Scanner (SAST)
+> *Because one leaked AWS key can end a company.*
 
-## 🧠 Why axon?
+Axon ships with a **zero-API, fully offline Static Application Security Testing (SAST) engine** built directly into the Quality Audit pipeline. No external calls. No rate limits. Just instant results.
 
-| Challenge                     | axon Solution                                        |
-|------------------------------|-------------------------------------------------------------|
-| Time-consuming onboarding     | Role-aware walkthroughs, tasks, and repo overviews         |
-| Hard-to-understand structure | Interactive dependency graph + architecture diagram        |
-| Legacy or complex codebases  | Refactor suggestions and debt hotspot analysis             |
-| Low contributor visibility    | Personal dashboards + auto-generated impact summaries      |
-| Copilot lacks context         | Full-repo understanding with task-aware AI assistants      |
+It detects:
+| Vulnerability | Example |
+|---|---|
+| AWS Access Keys | `AKIA[0-9A-Z]{16}` |
+| GitHub Tokens | `ghp_[a-zA-Z0-9]{36}` |
+| Stripe Live Keys | `sk_live_[a-zA-Z0-9]{24}` |
+| Hardcoded Passwords | `password = "secret123"` |
+| Exposed `.env` files | `.env`, `.env.local` |
+| Private Keys | `*.pem`, `id_rsa` |
+| Source Map Leaks | `*.map` files in production |
+
+All flagged as **[SECURITY][CRITICAL]** tasks, surfaced at the top of your audit list.
+
+---
+
+### 📡 Smart Updates — Commit Intelligence Feed
+> *Stop reading git logs. Start understanding what actually changed.*
+
+Every commit your team pushes is automatically classified using the **[Conventional Commits](https://www.conventionalcommits.org/)** standard — the same specification used by Angular, Vue.js, VS Code, and Vite.
+
+Commits are sorted into five categories:
+- 🟢 **New Features** — `feat:` prefixed or feature-adding commits
+- 🔵 **Refactors** — structural improvements and code cleanups  
+- 🔴 **Fixes & Performance** — `fix:`, `perf:`, hotfixes, rollbacks
+- 🟡 **Testing** — test additions and spec updates
+- 📄 **Documentation** — README, comments, changelog updates
+
+Each entry shows the **author**, **short SHA**, **date**, and **files modified** — exactly the way GitHub Insights presents it, but filtered and readable.
+
+---
+
+### 🔥 Technical Debt Hotspot Radar
+> *Find the files that are silently dragging your team down.*
+
+Axon traverses every file in your repository and computes a **Hotspot Score** based on:
+- Cyclomatic complexity of each function
+- Density of `TODO` / `FIXME` comments
+- Lines of code and nesting depth
+
+The result: a ranked list of your most dangerous files, with AI-generated, **plain-English refactor suggestions** so your team knows exactly what to fix and why.
+
+---
+
+### 🗺️ Architecture Dependency Graph
+> *Understand your entire codebase in 30 seconds.*
+
+Axon parses every import, require, and dependency link in your project using **Babel AST** and renders an interactive force-directed graph powered by **Cytoscape.js**. Click any node to explore its connections, contributors, and code context.
+
+---
+
+### 📊 Personal Impact Statement
+> *Your commits tell a story. Make sure people can read it.*
+
+Each contributor gets a personal **Impact Dashboard** driven entirely from your local Git data — no OAuth login required. Just type your Git author name, and Axon generates:
+- Your total commits & most-touched modules
+- A category breakdown of your work (features vs. fixes vs. refactors)
+- An auto-generated, resume-ready **impact bullet** describing your contribution
+
+---
+
+### 🤖 AI Pair Programming Mode
+> *Like having a senior engineer always available.*
+
+A real-time AI collaboration environment that understands your specific repository. Powered by Gemini, it combines:
+- Contextual file lookup from your codebase
+- Commit-aware query answering
+- Text + audio collaboration for remote pairing sessions
+
+---
+
+## 🏗️ Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                     Axon Platform                       │
+├──────────────┬──────────────────┬───────────────────────┤
+│  React/Vite  │   Node.js/Express│   Python FastAPI      │
+│  Frontend    │   Core Backend   │   AI Embeddings       │
+│  :5173       │   :3000          │   :5005               │
+├──────────────┴──────────────────┴───────────────────────┤
+│                     MongoDB Atlas                       │
+│   Repos · Commits · Nodes · Tasks · Sessions            │
+├─────────────────────────────────────────────────────────┤
+│              AI Pair Programming Sub-App                │
+│         React :8080  ·  Node.js/Socket.IO :3002         │
+└─────────────────────────────────────────────────────────┘
+```
+
+**Scan Pipeline:**
+```
+GitHub Repo URL
+     │
+     ▼
+simple-git clone → Babel AST parse → MongoDB Node storage
+                                           │
+                              ┌────────────┼────────────┐
+                              ▼            ▼            ▼
+                         Embeddings    Commits      Security
+                         (Python)     (Git log)    Scanner
+                              │            │            │
+                              └────────────┴────────────┘
+                                           │
+                                     Dashboard UI
+```
+
+---
 
 ## 🛠️ Tech Stack
 
-### 🔧 Backend
-- **Node.js**, **Express.js**
-- **Babel Parser** – for static AST analysis
-- **simple-git**, **ESLint**, **Socket.IO**
+| Layer | Technology |
+|---|---|
+| **Frontend** | React 18, Vite, Tailwind CSS, Cytoscape.js |
+| **Backend** | Node.js, Express.js, Babel Parser (AST) |
+| **AI Engine** | Python FastAPI, HuggingFace Embeddings |
+| **Database** | MongoDB (Mongoose ODM) |
+| **Code Analysis** | ESLint, simple-git, custom SAST engine |
+| **AI Models** | Gemini Flash (Pair Programming), HuggingFace (Embeddings) |
+| **Infrastructure** | Docker Compose, Supabase Auth |
+| **Pair Mode** | WebRTC, Socket.IO, Gemini API |
 
-### 🎨 Frontend
-- **React.js**, **Tailwind CSS**
-- **Cytoscape.js** – for graph visualization
+---
 
-### 📡 Infrastructure & Realtime
-- **WebRTC** – real-time audio/text pairing
-- **Supabase** – GitHub OAuth + backend auth services
-- **MongoDB**, **Docker** – for scalable local deployment
+## 🚀 Getting Started
 
-### 🧠 AI Integration
-- **GPT-4o** – repo summarization, quality audits, task generation
-- **GPT-4o Mini** – refactoring and complexity reduction
-- **Gemini Flash** – conversational assistant in Pairing Mode
+### Prerequisites
+- Node.js 18+ and npm
+- Python 3.10+ with pip
+- MongoDB running locally (or Docker)
+- A GitHub Personal Access Token
 
+### 1. Clone the Repository
 
+```bash
+git clone https://github.com/YugYadav25/Axon.git
+cd Axon
+```
 
-## 🛡️ Security & Reliability
+### 2. Configure Environment
 
-- **Prompt Sanitization**: Redacts environment variables, secrets, API keys, and internal paths before sending data to any LLM
-- **Validation Pipeline**: AI output cross-checked via ESLint and Git history
-- **Production Tested**: Validated across 5+ real-world public and private repositories
+```bash
+cp .env.example .env
+# Fill in your GITHUB_TOKEN, MONGODB_URI, and other keys
+```
 
-## 🧪 Future Roadmap
+### 3. Install All Dependencies (one command)
 
-- Offline/self-hosted LLM support for enterprise usage
-- Faster AST parsing and parallel static analysis
-- VS Code and JetBrains IDE integration
-- CI/CD pipeline and PR-level quality gate integration
+```powershell
+# Windows
+.\install_all.ps1
+
+# macOS / Linux
+chmod +x install_all.sh && ./install_all.sh
+```
+
+### 4. Launch All Services
+
+```powershell
+# Windows (opens 5 terminal windows automatically)
+.\start_all.ps1
+
+# macOS / Linux
+chmod +x start_all.sh && ./start_all.sh
+```
+
+### 5. Open the App
+
+| Service | URL |
+|---|---|
+| 🖥️ **Main App** | http://localhost:5173 |
+| ⚙️ **Node Backend** | http://localhost:3000 |
+| 🧠 **Python AI Backend** | http://localhost:5005 |
+| 🤖 **AI Pair UI** | http://localhost:8080 |
+| 🔌 **AI Pair Backend** | http://localhost:3002 |
+
+---
+
+## 🐳 Docker Deployment
+
+```bash
+docker-compose up -d --build
+```
+
+All 5 services spin up automatically with a single command. MongoDB, both backends, and the frontend are fully containerized.
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] **VS Code Extension** — Axon insights directly in your editor
+- [ ] **PR-level Security Gates** — Block merges with leaked secrets via GitHub Actions
+- [ ] **Team Leaderboard** — Gamified contribution tracking across the org
+- [ ] **Self-hosted LLM Support** — Ollama/LM Studio for air-gapped enterprise deployments
+- [ ] **Slack / Teams Integration** — Smart Update digests delivered to your team channel
+- [ ] **Multi-repo Projects** — Monorepo and microservice architecture support
+
+---
+
+## 🔐 Security
+
+Axon is designed with security-first principles:
+
+- **Prompt Sanitization** — All code snippets are scrubbed of environment variables, API keys, and internal paths before any LLM call
+- **Offline SAST** — The security scanner runs entirely locally, no data leaves your machine
+- **Zero Secret Storage** — Axon never stores your GitHub token beyond the active session
+- **Background Processing** — Large repo scans run asynchronously so no data is exposed in-flight
+
+---
+
+## 🤝 Contributing
+
+We'd love your help making Axon better. To contribute:
+
+1. Fork this repo
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit with conventional commits: `git commit -m "feat: add XYZ"`
+4. Open a Pull Request
+
+---
+
+<div align="center">
+
+**Built with ❤️ for developers, by developers.**
+
+*Axon — Because understanding code shouldn't be harder than writing it.*
+
+</div>

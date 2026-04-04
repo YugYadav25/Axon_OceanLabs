@@ -1,0 +1,499 @@
+{
+  "elements": [
+    {
+      "data": {
+        "id": "M_src",
+        "label": "src"
+      },
+      "classes": "module"
+    },
+    {
+      "data": {
+        "id": "N7_App",
+        "label": "App (C=0)",
+        "parent": "M_src",
+        "module": "src",
+        "filePath": "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\App.tsx",
+        "complexity": 0,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::AuthProvider",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::LandingPage",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::AuthPage",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::Dashboard",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::AdminPage"
+        ],
+        "calledFunctions": []
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "M_src_context",
+        "label": "src/context"
+      },
+      "classes": "module"
+    },
+    {
+      "data": {
+        "id": "N8_AuthProvider",
+        "label": "AuthProvider (C=1)",
+        "parent": "M_src_context",
+        "module": "src/context",
+        "filePath": "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx",
+        "complexity": 1,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::sessionStorage.getItem",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::setIsAuthenticated",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::setIsAuthenticated",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::sessionStorage.setItem",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::setToken",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::setUser",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::setIsAuthenticated",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::sessionStorage.removeItem",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::setToken",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::setUser",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::setIsAuthenticated"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N9_useAuth",
+        "label": "useAuth (C=1)",
+        "parent": "M_src_context",
+        "module": "src/context",
+        "filePath": "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx",
+        "complexity": 1,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": []
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "M_src_pages",
+        "label": "src/pages"
+      },
+      "classes": "module"
+    },
+    {
+      "data": {
+        "id": "N10_AdminPage",
+        "label": "AdminPage (C=27)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx",
+        "complexity": 27,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": true,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::useAuth",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::useNavigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::fetchUsers",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::axios.get",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setUsers",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setLoading",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::console.error",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setLoading",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setIsDownloading",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::sessionStorage.getItem",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::fetch",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::response.text",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::JSON.parse",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::response.blob",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::window.URL.createObjectURL",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::document.createElement",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::link.setAttribute",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::document.body.appendChild",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::link.click",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::console.error",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setMessage",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setIsDownloading",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setSearchTerm",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::e.target.value.toLowerCase",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::users.filter",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::searchTerm.toLowerCase",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::u.name.toLowerCase",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::u.email.toLowerCase",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::u.materials.some",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::m.toLowerCase",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::users.filter",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setViewMaterialsUser",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setViewMaterialsUser",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setSelectedUser",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setEditName",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setEditEmail",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setEditMaterials",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::Array",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setMessage",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setSelectedUser",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setEditMaterials",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setMessage",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setEditMaterials",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setMessage",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::axios.put",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setMessage",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setUsers",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::users.map",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setTimeout",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::closeEditModal",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setMessage",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::logout",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::filteredUsers.map",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::openViewModal",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::openEditModal",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::viewMaterialsUser.materials.map",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setEditName",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::setEditEmail",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::editMaterials.map",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AdminPage.tsx::handleMaterialChange"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N11_AuthPage",
+        "label": "AuthPage (C=5)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx",
+        "complexity": 5,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": true,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::useAuth",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::useNavigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::e.preventDefault",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::setLoading",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::axios.post",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::login",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::setLoading",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::setFormData",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\AuthPage.tsx::setFormData"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N12_Dashboard",
+        "label": "Dashboard (C=52)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx",
+        "complexity": 52,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": true,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::useAuth",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::useNavigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::Array",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::searchQuery.trim",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSearching",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSearchResult",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::axios.get",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::encodeURIComponent",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSearchResult",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::console.error",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSearching",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::axios.get",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setHasSubmitted",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setMaterials",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setConfirmed",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::console.error",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setLoading",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::fetchStatus",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setPersonalInfo",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setMaterials",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setIsEditing",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSuccess",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSubmitting",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::materials.some",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::m.trim",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSubmitting",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::axios.put",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSuccess",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setMaterials",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setIsEditing",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::window.scrollTo",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::err.response.data.duplicates.join",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::window.scrollTo",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSubmitting",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSuccess",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSubmitting",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::materials.some",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::m.trim",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSubmitting",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSubmitting",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::axios.post",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSuccess",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setHasSubmitted",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setMaterials",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::window.scrollTo",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::err.response.data.duplicates.join",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setError",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::window.scrollTo",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSubmitting",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setSearchQuery",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::handleSearch",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::searchQuery.trim",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::searchResult.matches.join",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::materials.filter",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::logout",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::materials.slice",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::String",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::updateMaterial",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::materials.slice",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::undefined",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::String",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::updateMaterial",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\Dashboard.tsx::setConfirmed"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N13_LandingPage",
+        "label": "LandingPage (C=13)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx",
+        "complexity": 13,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::useNavigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\context\\AuthContext.tsx::useAuth",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::setIsMenuOpen",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::logout",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::navigate",
+          "C:\\Users\\YUGYAD~1\\AppData\\Local\\Temp\\reposensei\\YugYadav25\\MaterialSystem\\src\\pages\\LandingPage.tsx::navigate"
+        ]
+      },
+      "style": {
+        "background-color": "#1D4ED8",
+        "border-color": "#60A5FA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "source": "N7_App",
+        "target": "N8_AuthProvider",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N7_App",
+        "target": "N13_LandingPage",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N7_App",
+        "target": "N11_AuthPage",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N7_App",
+        "target": "N12_Dashboard",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N7_App",
+        "target": "N10_AdminPage",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N10_AdminPage",
+        "target": "N9_useAuth",
+        "edgeType": "cross-call",
+        "relationship": "cross-module call"
+      },
+      "style": {
+        "line-color": "#FB923C",
+        "target-arrow-color": "#FB923C",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N11_AuthPage",
+        "target": "N9_useAuth",
+        "edgeType": "cross-call",
+        "relationship": "cross-module call"
+      },
+      "style": {
+        "line-color": "#FB923C",
+        "target-arrow-color": "#FB923C",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N12_Dashboard",
+        "target": "N9_useAuth",
+        "edgeType": "cross-call",
+        "relationship": "cross-module call"
+      },
+      "style": {
+        "line-color": "#FB923C",
+        "target-arrow-color": "#FB923C",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N13_LandingPage",
+        "target": "N9_useAuth",
+        "edgeType": "cross-call",
+        "relationship": "cross-module call"
+      },
+      "style": {
+        "line-color": "#FB923C",
+        "target-arrow-color": "#FB923C",
+        "width": 2.5
+      }
+    }
+  ]
+}

@@ -10,15 +10,17 @@ import PersonalBranding from './pages/personalBranding';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/docs/:repoId" element={<DocsArchitecture />} />
-      <Route path="/onboarding/:repoId" element={<Onboarding />} />
-      <Route path="/hotspots/:repoId" element={<Hotspots />} />
-      <Route path="/commits/:repoId" element={<RecentChanges />} />
-      <Route path="/personal-branding/:repoId" element={<PersonalBranding />} />
-      <Route path="/selectrepo" element={<SelectRepo />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/docs/:repoId" element={<DocsArchitecture />} />
+        <Route path="/onboarding/:repoId" element={<Onboarding />} />
+        <Route path="/hotspots/:repoId" element={<Hotspots />} />
+        <Route path="/commits/:repoId" element={<RecentChanges />} />
+        <Route path="/personal-branding/:repoId" element={<PersonalBranding />} />
+        <Route path="/selectrepo" element={<SelectRepo />} />
+      </Routes>
+    </>
   );
 }
 

@@ -24,6 +24,7 @@ export default function ResumeSection({
   loading,
   setLoading,
   setError,
+  targetUsername,
 }) {
   const cardRef = useRef();
   const [showModal, setShowModal] = useState(false);
@@ -47,6 +48,7 @@ export default function ResumeSection({
           repoUrl: `https://github.com/${repoId}`,
           repoId,
           userId: user.id,
+          targetUsername,
           role,
           projectName,
           startDate,

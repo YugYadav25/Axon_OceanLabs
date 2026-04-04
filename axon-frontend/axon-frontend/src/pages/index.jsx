@@ -60,7 +60,7 @@ export default function LandingPage() {
 
     {/* Main heading */}
     <h2 className="text-5xl sm:text-6xl font-medium bg-gradient-to-r from-[#CAF5BB] to-[#2F89FF] bg-clip-text text-transparent">
-      axon
+      Axon
     </h2>
   </div>
 

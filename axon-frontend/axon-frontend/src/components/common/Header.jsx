@@ -2,6 +2,7 @@ import { Icon } from '@iconify-icon/react';
 import { useNavigate } from 'react-router-dom';
 import Profile from '../../assets/pfp.png';
 import PropTypes from 'prop-types';
+import NotificationInbox from '../NotificationInbox';
 
 const Header = ({ user }) => {
   const navigate = useNavigate();
@@ -14,11 +15,12 @@ const Header = ({ user }) => {
 
   return (
     <div className="absolute top-4 right-4 flex items-center gap-2 z-10">
+      <NotificationInbox />
       <button
         title="Logout"
         className="text-sm px-3 py-3 bg-black/20 rounded-[50px] hover:bg-[#E45454]/30 flex items-center"
         onClick={handleLogout}
-        >
+      >
         <Icon icon="streamline-sharp:logout-2" width="21" height="21" style={{ color: "#E45454" }} />
       </button>
 

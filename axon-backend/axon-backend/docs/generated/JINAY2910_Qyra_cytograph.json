@@ -1,0 +1,1328 @@
+{
+  "elements": [
+    {
+      "data": {
+        "id": "M_server_utils",
+        "label": "server/utils"
+      },
+      "classes": "module"
+    },
+    {
+      "data": {
+        "id": "N22_generateRandomCode",
+        "label": "generateRandomCode (C=1)",
+        "parent": "M_server_utils",
+        "module": "server/utils",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js",
+        "complexity": 1,
+        "fileType": "backend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::Math.floor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::Math.random"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N23_generateTokenNumber",
+        "label": "generateTokenNumber (C=5)",
+        "parent": "M_server_utils",
+        "module": "server/utils",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js",
+        "complexity": 5,
+        "fileType": "backend",
+        "isAsync": true,
+        "returnsValue": false,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::generateRandomCode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::QueueItem.findOne",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::Date.now",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::generateRandomCode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/server/utils/generateTokenNumber.js::Date.now"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "M_src",
+        "label": "src"
+      },
+      "classes": "module"
+    },
+    {
+      "data": {
+        "id": "N24_App",
+        "label": "App (C=17)",
+        "parent": "M_src",
+        "module": "src",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx",
+        "complexity": 17,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/Home.tsx::Home",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::JoinQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::QueueStatus",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/Home.tsx::Home",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::AdminLogin",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::AdminDashboard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::AdminSettings",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::AdminDashboard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::Navbar",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Toast.tsx::Toast"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setIsMaintenanceMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::checkMaintenanceMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::clearInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setTimeout",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setIsAdminLoggedIn",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setCurrentAdminPage",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setAppMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setIsAdminLoggedIn",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setCurrentAdminPage",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setAppMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setAppMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setAppMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setAppMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setAppMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::renderUserPage",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::renderAdminPage",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/App.tsx::setToast"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "M_src_components",
+        "label": "src/components"
+      },
+      "classes": "module"
+    },
+    {
+      "data": {
+        "id": "N25_AdminControls",
+        "label": "AdminControls (C=2)",
+        "parent": "M_src_components",
+        "module": "src/components",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/AdminControls.tsx",
+        "complexity": 2,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": []
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N27_Modal",
+        "label": "Modal (C=6)",
+        "parent": "M_src_components",
+        "module": "src/components",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Modal.tsx",
+        "complexity": 6,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Modal.tsx::onClose",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Modal.tsx::document.addEventListener",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Modal.tsx::document.removeEventListener",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Modal.tsx::e.stopPropagation",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Modal.tsx::getHeaderColor"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N28_Navbar",
+        "label": "Navbar (C=4)",
+        "parent": "M_src_components",
+        "module": "src/components",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx",
+        "complexity": 4,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QyraLogo.tsx::QyraLogo"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::setIsMobileMenuOpen",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::handleNavClick",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::navItems.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::handleNavClick",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::setIsMobileMenuOpen",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::navItems.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Navbar.tsx::handleNavClick"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N29_QueueTable",
+        "label": "QueueTable (C=15)",
+        "parent": "M_src_components",
+        "module": "src/components",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx",
+        "complexity": 15,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::date.toLocaleTimeString",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::Math.floor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::Date.now",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::Math.floor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::queue.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::getCustomerTypeColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::getCustomerTypeLabel",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::getWaitingTime",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::onStartServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::onMakePriority",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::queue.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::getCustomerTypeColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::getCustomerTypeLabel",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::formatTime",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::getWaitingTime",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::onStartServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::onComplete",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::onMakePriority"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N30_QueueTicket",
+        "label": "QueueTicket (C=6)",
+        "parent": "M_src_components",
+        "module": "src/components",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTicket.tsx",
+        "complexity": 6,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTicket.tsx::data.customerType.toLowerCase",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTicket.tsx::data.customerType.toLowerCase",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTicket.tsx::getTypeColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTicket.tsx::getTypeIcon"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N31_QyraLogo",
+        "label": "QyraLogo (C=2)",
+        "parent": "M_src_components",
+        "module": "src/components",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QyraLogo.tsx",
+        "complexity": 2,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": []
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N32_Toast",
+        "label": "Toast (C=6)",
+        "parent": "M_src_components",
+        "module": "src/components",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Toast.tsx",
+        "complexity": 6,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Toast.tsx::setTimeout",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Toast.tsx::clearTimeout",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Toast.tsx::getToastStyle",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Toast.tsx::getIcon"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N33_TokenCard",
+        "label": "TokenCard (C=13)",
+        "parent": "M_src_components",
+        "module": "src/components",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx",
+        "complexity": 13,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::date.toLocaleTimeString",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::getCustomerTypeColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::getCustomerTypeLabel",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::formatTime",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::Math.floor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::Date.now",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::onComplete",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::queue.find",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::getCustomerTypeColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::getCustomerTypeLabel",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::formatTime",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::Math.floor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::Date.now",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::onStartServing"
+        ]
+      },
+      "style": {
+        "background-color": "#1D4ED8",
+        "border-color": "#60A5FA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "M_src_pages",
+        "label": "src/pages"
+      },
+      "classes": "module"
+    },
+    {
+      "data": {
+        "id": "N35_AdminAnalytics",
+        "label": "AdminAnalytics (C=2)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminAnalytics.tsx",
+        "complexity": 2,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QyraLogo.tsx::QyraLogo"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminAnalytics.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminAnalytics.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminAnalytics.tsx::hourlyData.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminAnalytics.tsx::customerTypes.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminAnalytics.tsx::undefined"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N36_AdminDashboard",
+        "label": "AdminDashboard (C=59)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx",
+        "complexity": 59,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QyraLogo.tsx::QyraLogo"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::setIsQueuePaused",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::Boolean",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetchQueueStatus",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::data.data.queue.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::item.type.toLowerCase",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetchQueueList",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::JSON.stringify",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::setIsQueuePaused",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetchQueueList",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::prev.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::prev.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::window.confirm",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::prev.filter",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::fetchQueueList",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::queue.find",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::queue.filter",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::queue.find",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::e.stopPropagation",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::getTypeIcon",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::getTypeColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::currentlyServing.type.toUpperCase",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::handleComplete",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::handleSkip",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::queue.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::getTypeIcon",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::getTypeColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::item.type.toUpperCase",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::item.status.toUpperCase",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::handleStartServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::handleComplete",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::setSelectedContactId",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::handleRemove",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminDashboard.tsx::setSelectedContactId"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N37_AdminLogin",
+        "label": "AdminLogin (C=8)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx",
+        "complexity": 8,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QyraLogo.tsx::QyraLogo"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::e.preventDefault",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::setIsLoading",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::JSON.stringify",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::localStorage.setItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::setIsLoading",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::onLogin",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::setIsLoading",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::setEmail",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::setPassword",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminLogin.tsx::setShowPassword"
+        ]
+      },
+      "style": {
+        "background-color": "#1D4ED8",
+        "border-color": "#60A5FA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N38_AdminSettings",
+        "label": "AdminSettings (C=23)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx",
+        "complexity": 23,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QyraLogo.tsx::QyraLogo"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsPaused",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsClosed",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsMaintenanceMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsClosed",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsPaused",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsMaintenanceMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsMaintenanceMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsPaused",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsClosed",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsPaused",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsClosed",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsMaintenanceMode",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setAvgTimePerCustomer",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsLoading",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::fetchSettings",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsSaving",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::JSON.stringify",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setIsSaving",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::setAvgTimePerCustomer",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/AdminSettings.tsx::parseInt"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N39_Home",
+        "label": "Home (C=0)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/Home.tsx",
+        "complexity": 0,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/Home.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/Home.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/Home.tsx::features.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/Home.tsx::onNavigate"
+        ]
+      },
+      "style": {
+        "background-color": "#1E3A5F",
+        "border-color": "#38BDF8",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N40_JoinQueue",
+        "label": "JoinQueue (C=56)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx",
+        "complexity": 56,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTicket.tsx::QueueTicket"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setShopSettings",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::fetchSettings",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::clearInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::formData.fullName.trim",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::formData.fullName.trim",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::formData.phone.trim",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::formData.email.trim",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setErrors",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::Object.keys",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::e.preventDefault",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::validateForm",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setIsSubmitting",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::JSON.stringify",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setAssignedToken",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setPosition",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setEstimatedWait",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::now.toLocaleString",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setJoinedAt",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setIsSubmitted",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setIsSubmitting",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setFormData",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::setErrors",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::console.log",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::console.log",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFillColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.rect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFillColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.roundedRect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setDrawColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setLineWidth",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.roundedRect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFillColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.roundedRect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFillColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.rect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setDrawColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setLineWidth",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.line",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFillColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.roundedRect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFillColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.roundedRect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.getTextWidth",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::displayValue.slice",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFillColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.roundedRect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::addFieldCard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::addFieldCard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFillColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.roundedRect",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::addFieldCard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::addFieldCard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::addFieldCard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::addFieldCard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setDrawColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setLineWidth",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.line",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.textWithLink",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setTextColor",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFontSize",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.setFont",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.text",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::pdf.save",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::console.log",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::handleInputChange",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::handleInputChange",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::handleInputChange",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::customerTypes.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::handleInputChange",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/JoinQueue.tsx::onNavigate"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N41_ManageQueue",
+        "label": "ManageQueue (C=48)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx",
+        "complexity": 48,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/AdminControls.tsx::AdminControls",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/TokenCard.tsx::TokenCard",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QueueTable.tsx::QueueTable",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/Modal.tsx::Modal"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::queue.filter",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::item.name.toLowerCase",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::searchTerm.toLowerCase",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::item.tokenNumber.toString",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::queue.filter",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::queue.filter",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::prev.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::prev.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::prev.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setTimeout",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::prev.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::Math.max",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::localStorage.getItem",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::prev.filter",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::showToast",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::handleStartServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::handleComplete",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::handleMakePriority",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::handleRemove",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::onNavigate",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setIsCompactView",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSearchTerm",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setFilterType",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::getActionModalContent",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::getActionModalContent",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::getActionModalContent",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::setSelectedAction",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::getActionModalContent",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::getActionModalContent",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/ManageQueue.tsx::getActionModalContent"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "id": "N42_QueueStatus",
+        "label": "QueueStatus (C=44)",
+        "parent": "M_src_pages",
+        "module": "src/pages",
+        "filePath": "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx",
+        "complexity": 44,
+        "fileType": "frontend",
+        "isAsync": false,
+        "returnsValue": true,
+        "httpEndpoint": null,
+        "invokesAPI": false,
+        "invokesDBQuery": false,
+        "relatedComponents": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/components/QyraLogo.tsx::QyraLogo"
+        ],
+        "calledFunctions": [
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::fetchCurrentServing",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::clearInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::data.data.queue.filter",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setQueue",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::fetchQueueList",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::clearInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::fetch",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::response.json",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setIsPaused",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::Boolean",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setIsClosed",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::Boolean",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::console.error",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setIsPaused",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setIsClosed",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::fetchQueuePauseStatus",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::clearInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setCurrentTime",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::clearInterval",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::document.documentElement.requestFullscreen",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setIsFullscreen",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::console.log",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::undefined",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::document.exitFullscreen",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setIsFullscreen",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::setIsFullscreen",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::onFullscreenChange",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::document.addEventListener",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::document.removeEventListener",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::date.toLocaleTimeString",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::formatTime",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::currentTime.toLocaleDateString",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::getCustomerTypeInfo",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::queue.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::getCustomerTypeInfo",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::formatTime",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::currentTime.toLocaleDateString",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::getCustomerTypeInfo",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::queue.map",
+          "/var/folders/vn/320c6fqj5kjcltqs9gf590640000gn/T/reposensei/JINAY2910/Qyra/src/pages/QueueStatus.tsx::getCustomerTypeInfo"
+        ]
+      },
+      "style": {
+        "background-color": "#7C3AED",
+        "border-color": "#A78BFA",
+        "border-width": 2
+      }
+    },
+    {
+      "data": {
+        "source": "N23_generateTokenNumber",
+        "target": "N22_generateRandomCode",
+        "edgeType": "intra-call",
+        "relationship": "intra-module call"
+      },
+      "style": {
+        "line-color": "#38BDF8",
+        "target-arrow-color": "#38BDF8",
+        "width": 1.8
+      }
+    },
+    {
+      "data": {
+        "source": "N23_generateTokenNumber",
+        "target": "N22_generateRandomCode",
+        "edgeType": "intra-call",
+        "relationship": "intra-module call"
+      },
+      "style": {
+        "line-color": "#38BDF8",
+        "target-arrow-color": "#38BDF8",
+        "width": 1.8
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N39_Home",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N40_JoinQueue",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N42_QueueStatus",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N39_Home",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N37_AdminLogin",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N36_AdminDashboard",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N38_AdminSettings",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N36_AdminDashboard",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N28_Navbar",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N24_App",
+        "target": "N32_Toast",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N28_Navbar",
+        "target": "N31_QyraLogo",
+        "edgeType": "intra-component",
+        "relationship": "intra-module component"
+      },
+      "style": {
+        "line-color": "#4ADE80",
+        "target-arrow-color": "#4ADE80",
+        "width": 2
+      }
+    },
+    {
+      "data": {
+        "source": "N35_AdminAnalytics",
+        "target": "N31_QyraLogo",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N36_AdminDashboard",
+        "target": "N31_QyraLogo",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N37_AdminLogin",
+        "target": "N31_QyraLogo",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N38_AdminSettings",
+        "target": "N31_QyraLogo",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N40_JoinQueue",
+        "target": "N30_QueueTicket",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N41_ManageQueue",
+        "target": "N25_AdminControls",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N41_ManageQueue",
+        "target": "N33_TokenCard",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N41_ManageQueue",
+        "target": "N29_QueueTable",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N41_ManageQueue",
+        "target": "N27_Modal",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    },
+    {
+      "data": {
+        "source": "N42_QueueStatus",
+        "target": "N31_QyraLogo",
+        "edgeType": "cross-component",
+        "relationship": "cross-module component"
+      },
+      "style": {
+        "line-color": "#F59E0B",
+        "target-arrow-color": "#F59E0B",
+        "width": 2.5
+      }
+    }
+  ]
+}
