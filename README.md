@@ -638,14 +638,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ---
 
-## Authors
-
-**Axon** was built with dedication by the team at OceanLabs.
-
-- **Lead Developer**: Yug Yadav (@YugYadav25)
-
----
-
 **Built with ❤️ for developers, by developers.**
 
 *Axon — Because understanding code shouldn't be harder than writing it.*
